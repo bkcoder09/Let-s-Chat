@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <title> Let's Chat App </title>
+    <link rel="stylesheet" type="text/css" href="Let'sChat.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
+
+    <script src="Let'sChat.js"></script>
+</head>
+
+<body style="background-color:fuchsia;">
+    <center>
+        <br>
+        <button type="button" class="glyphicon glyphicon-log-out btn-danger" onclick="logout()" style="position:top-left;"> Logout </button>
+        <br>
+        <hr>
+        <br>
+        <h1> Make or Join a Chat Room </h1>
+        <br>
+        <hr>
+        <br>
+        <div style="background-color:aquamarine; width:500; border-radius:15px;">  
+        <br>
+        <hr>
+        <br>
+        <span id="welcome_user"> </span>
+        <br>
+        <hr>
+        <br>
+        <h3> Room Name: </h3>
+        <input type="text" id="room_name_input" class="form-control" placeholder="Enter Room Name" style="width:475px">
+        <br>
+        <button type="button" class="btn btn-success" id="room_name_button" onclick="addRoom()"> Create Room </button>
+        <br>
+        <br>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="rooms" style="background-color:gray; width:900px; border-radius:15px;">
+            <br>
+        </div>
+        <br>
+        <hr>
+    </center>
+</body>
+</html>
