@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 
 username = localStorage.getItem("username_input");
 console.log("Hello  "+username);
-document.getElementById("user_tag").innerHTML = "Welcome, "+username+"!";
+document.getElementById("user_tag").innerHTML = "Welcome "+username+"!";
 
 function addRoom(){
   var room_name = document.getElementById("room_name_input").value;
@@ -38,3 +38,8 @@ function redirectToRoomName(name){
 //End code
 });});}
 getData();
+
+function logout(){
+  localStorage.removeItem("username_input");
+  window.location="chat_page.html";
+}
